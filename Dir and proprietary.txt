@@ -1,0 +1,185 @@
+###CFD Code for Plasma and Reactive Flow
+<https://overbrace.com/bernardparent/viewforum.php?f=22>
+###::::CFDWARP-MASTER Dir Tree::::
+***proprietary***:共计17个需要授权
+
+├─LICENSES
+├─bin
+├─config 
+│  └─_proprietary ***proprietary***
+├─cycle
+│  ├─_multizone
+│  ├─_multizone_marching
+│  ├─_predictor_corrector
+│  ├─_standard
+│  ├─doc
+│  │  └─xfig
+│  ├─res
+│  │  ├─_generic
+│  │  └─doc
+│  ├─resconv
+│  │  ├─_FDS+
+│  │  ├─_FDS
+│  │  ├─_FDS_Cauchy
+│  │  ├─_FVS+
+│  │  ├─_FVS
+│  │  ├─_FVSTVD+
+│  │  ├─_MUSCL+
+│  │  ├─_MUSCL
+│  │  │  └─doc
+│  │  ├─_MUSCLX
+│  │  │  └─doc
+│  │  ├─_none
+│  │  └─doc
+│  ├─ressource
+│  │  ├─_SDS+
+│  │  ├─_SVS+
+│  │  ├─_forward
+│  │  └─doc
+│  ├─restime
+│  │  ├─_BDF
+│  │  ├─_CDF+
+│  │  ├─_RK4
+│  │  ├─_TVDRK
+│  │  ├─_Trapezoidal+
+│  │  ├─_Trapezoidal
+│  │  └─_steady-state
+│  ├─share
+│  ├─ts
+│  │  ├─_block_ADI
+│  │  ├─_block_DDADI ***proprietary***
+│  │  ├─_block_IMAF  ***proprietary***
+│  │  ├─_explicit
+│  │  ├─_none
+│  │  ├─doc
+│  │  └─ref
+│  └─tsemf
+│      ├─_AF ***proprietary***
+│      ├─_GS
+│      │  ├─doc
+│      │  └─doc2
+│      └─_none
+├─lib
+│  ├─exm
+│  ├─gridg
+│  │  ├─doc
+│  │  └─eg
+│  ├─include
+│  ├─latex
+│  │  └─eg
+│  └─soap
+│      ├─doc
+│      └─eg
+├─model
+│  ├─_generic
+│  ├─beam
+│  │  ├─_ebeam_algebraic
+│  │  ├─_ebeam_fixed
+│  │  ├─_none
+│  │  └─doc
+│  ├─chem
+│  │  ├─_Air_1s_0r
+│  │  ├─_Air_2s_0r
+│  │  ├─_Air_5s
+│  │  │  └─doc
+│  │  ├─_Air_Plasma_11s
+│  │  │  └─doc
+│  │  ├─_Air_Plasma_12s
+│  │  │  └─doc
+│  │  ├─_Air_Plasma_6s_15r
+│  │  │  └─doc
+│  │  ├─_Air_Plasma_8s
+│  │  │  └─doc
+│  │  ├─_Air_TEST_3s_0r
+│  │  ├─_C12H23_Air_16s_23r_Kundu
+│  │  │  └─ref
+│  │  ├─_C12H23_Cs_Air_Plasma_21s ***proprietary***
+│  │  ├─_C3H8_Air_16s_23r_Kundu 
+│  │  │  └─galcit-validation-data
+│  │  ├─_CH4_Air_20s_52r_Yungster
+│  │  │  └─ref
+│  │  ├─_CO2_Plasma_23s_Park
+│  │  │  └─doc
+│  │  ├─_Cs_Air_Plasma_11s ***proprietary***
+│  │  ├─_Cs_Air_Plasma_15s ***proprietary***
+│  │  ├─_H2_Air_13s
+│  │  │  ├─doc
+│  │  │  ├─galcit-validation-data
+│  │  │  └─refs
+│  │  ├─_H2_Air_3s_0r
+│  │  ├─_H2_Air_9s
+│  │  │  ├─doc
+│  │  │  ├─galcit-validation-data
+│  │  │  └─refs
+│  │  ├─_H2_Air_Plasma_13s ***proprietary***
+│  │  ├─_H2_Air_Plasma_18s ***proprietary***
+│  │  ├─_H2_Cs_Air_Plasma_15s ***proprietary***
+│  │  ├─_H2_He_CH4_Plasma_13s ***proprietary***
+│  │  ├─_He_Air_3s_0r
+│  │  ├─_N2_Plasma_3s_3r
+│  │  ├─doc
+│  │  │  ├─refs
+│  │  │  └─townsend
+│  │  ├─old
+│  │  │  ├─_Air_Plasma_8s_28r_Macheret
+│  │  │  │  ├─doc
+│  │  │  │  └─townsend
+│  │  │  ├─_air10s19r
+│  │  │  ├─_air15s76r
+│  │  │  │  └─doc
+│  │  │  ├─_air8s15r
+│  │  │  │  └─doc
+│  │  │  │      └─townsend
+│  │  │  ├─_kerosene19s24r
+│  │  │  │  └─doc
+│  │  │  ├─_lutz
+│  │  │  └─_singh
+│  │  │      └─doc
+│  │  └─refs
+│  ├─emfield
+│  │  ├─_Epotential-Bfixed ***proprietary***
+│  │  ├─_Epotential-Te ***proprietary***
+│  │  ├─_Epotential ***proprietary***
+│  │  ├─_none
+│  │  └─doc
+│  │      ├─Electrodynamics
+│  │      ├─Epotential
+│  │      └─RHT
+│  ├─fluid
+│  │  ├─_Favre-Reynolds
+│  │  ├─_Favre-Reynolds_Tv
+│  │  │  └─eigenstructure
+│  │  ├─_Favre-Reynolds_plasma ***proprietary***
+│  │  ├─_Navier-Stokes
+│  │  ├─_Navier-Stokes_perfect
+│  │  │  └─mathematica
+│  │  ├─_Navier-Stokes_plasma ***proprietary***
+│  │  ├─_drift-diffusion ***proprietary***
+│  │  └─doc
+│  │      ├─Axisymmetric_Theory
+│  │      ├─Favre_Averaging
+│  │      ├─MHD_Quasi1D
+│  │      │  └─codes
+│  │      ├─Performance_Parameters
+│  │      │  └─test
+│  │      ├─Plasma_Model
+│  │      └─Transport_Equations
+│  ├─metrics
+│  │  ├─_generic
+│  │  ├─_generic_old
+│  │  └─doc
+│  ├─share
+│  └─thermo
+│      ├─_generic
+│      │  ├─ref
+│      │  └─test
+│      └─doc
+├─src
+│  └─arc
+├─tar
+└─tools
+    ├─doc
+    │  ├─Rocket_v2
+    │  └─ringleb
+    └─old
+        └─roe
